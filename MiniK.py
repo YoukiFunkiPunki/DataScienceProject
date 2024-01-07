@@ -4,8 +4,7 @@ from sklearn.cluster import MiniBatchKMeans
 from sklearn.metrics import davies_bouldin_score
 from sklearn.preprocessing import StandardScaler
 
-# Assuming your 'data' is a list of 18 lists, each with 3879 data points
-# You can convert it to a NumPy array for better processing
+# Step 1: Load and explore the dataset
 data = np.load('data.npy')
 data_array = np.array(data)
 
