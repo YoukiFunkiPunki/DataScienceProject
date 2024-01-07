@@ -5,7 +5,6 @@ from sklearn.metrics import davies_bouldin_score
 
 # Step 1: Load and explore the dataset
 data = np.load('data.npy')
-
 data_array = np.array(data)
 
 # Reshape the data to (18 * 3879, 1) for clustering
