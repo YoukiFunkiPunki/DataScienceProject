@@ -29,11 +29,8 @@ plt.xlabel('Number of Clusters (k)')
 plt.ylabel('Inertia')
 plt.show()
 
-# From the graph, choose an appropriate number of clusters (k)
-# Let's assume you choose k=3
-
 # Apply K-means clustering with the chosen number of clusters
-chosen_k = 3
+chosen_k = 4
 kmeans = KMeans(n_clusters=chosen_k, random_state=42)
 clusters = kmeans.fit_predict(reshaped_data)
 
@@ -47,5 +44,3 @@ plt.show()
 # Evaluate the clustering using Davies-Bouldin index
 db_index = davies_bouldin_score(reshaped_data, clusters)
 print(f'Davies-Bouldin Index: {db_index}')
-
-# The lower the Davies-Bouldin index, the better the clustering performance
