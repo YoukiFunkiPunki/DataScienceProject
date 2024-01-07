@@ -11,7 +11,7 @@ data_array = np.array(data)
 reshaped_data = data_array.reshape(-1, 1)
 
 # Apply Gaussian Mixture Model clustering
-gmm = GaussianMixture(n_components=3, random_state=42)
+gmm = GaussianMixture(n_components=4, random_state=42)
 clusters = gmm.fit_predict(reshaped_data)
 
 # Visualize the clustered data
