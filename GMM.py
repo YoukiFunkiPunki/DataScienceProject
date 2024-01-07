@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import davies_bouldin_score
 
-# Assuming your 'data' is a list of 18 lists, each with 3879 data points
-# You can convert it to a NumPy array for better processing
+# Step 1: Load and explore the dataset
 data = np.load('data.npy')
 data_array = np.array(data)
 
