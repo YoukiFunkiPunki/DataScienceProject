@@ -16,7 +16,7 @@ scaler = StandardScaler()
 standardized_data = scaler.fit_transform(reshaped_data)
 
 # Apply MiniBatchKMeans clustering
-minibatch_kmeans = MiniBatchKMeans(n_clusters=3, batch_size=1000, random_state=42)
+minibatch_kmeans = MiniBatchKMeans(n_clusters=4, batch_size=1000, random_state=42)
 clusters = minibatch_kmeans.fit_predict(standardized_data)
 
 # Visualize the clustered data
